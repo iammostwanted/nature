@@ -1,0 +1,116 @@
+@import url('fonts.css');
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: opensans-regular, Helvetica;
+	color: black;
+}
+header {
+	background-color: #2ecc71;
+	font-family: opensans;
+	font-size: 1.5em;
+	margin-bottom: 40px;
+}
+menu{
+	text-align: center;
+	display: block;	
+	opacity: 1;
+}
+
+menu ul{
+	list-style: none;
+	display: inline-block;
+	/*height: 100%;*/
+}
+menu li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #f39c12;
+	padding-bottom: 5px;
+}
+menu li a {
+	font-size: 1.3em;
+	font-family:  lato-regular;
+	color: white;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-limiting-function: ease-out;
+	transition-delay: initial;	
+	text-decoration: none;	
+}
+menu li a:after{
+	content: "";
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+	visibility: hidden;
+}
+menu li a:not(.active):hover{
+	text-decoration: none;
+	color: #34495e;
+}
+menu li a:not(.active):hover:after{
+	visibility: visible;
+	width: 100%;
+	color: black;
+	background: #34495e;
+}
+menu li a .changed:after{
+	width: 100%;
+	color: #c0392b;
+	background: black;
+}
+menu li a.active{	
+	font-family: lato-regular;
+	text-decoration: none;
+	color: black; 		
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+}
+
+.active{    
+	text-decoration: none;
+	font-style: bold;
+	font-size: 1.7em;
+	color: black; 	
+}
+h1 {
+	font-family: lobster;
+	font-size: 3em;
+	color: #27ae60;
+}
+.main-picture {
+	width: 100%;
+	border-radius: 20px;
+}
+.marged-low {
+	margin-bottom: 25px;
+}
+.heading{
+	font-family: lobster;
+	font-size: 1.3em;
+	color: black;
+}
+p {
+	font-family: opensans-regular;
+	font-size: 14px;
+	color: black;
+}
+.unordered-list {
+	list-style: square;
+}
+.gallery-object {
+	width: 90%;
+	height: 350px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+.marged{
+	margin-bottom: 20px;	
+}
